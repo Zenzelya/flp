@@ -1,0 +1,495 @@
+/*
+* Third Party
+*/
+@import "../../bower_components/strict-reset.css/_strict-reset.scss";
+
+/*
+* Custom
+*/
+@import "partials/_utils.scss";
+@import "partials/header.scss";
+/* @import "partials/footer.scss"; */
+
+@font-face {
+    font-family: "Geomanist"; 
+    src: url(../fonts/geomanist-regular-italic-webfont.woff); 
+    src: url(../fonts/geomanist-regular-webfont.woff);
+    
+}
+
+@font-face {
+    font-family: "Myriad Pro"; 
+    src: url(../fonts/8143.otf); 
+  
+}
+
+
+
+html {
+    font-size: 16px;
+   
+    @include respond-to(desktopt) {
+    	font-size: 18px;
+    }
+
+    @include respond-to(desktoptd) {
+    	font-size: 22px;
+    }
+  }
+
+ .wrapper{
+ 		width: 100vw;
+ 		height: 3000px;
+ }
+
+
+
+.content{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+	height: 100%;
+	background-color: rgb(50, 49, 69);
+	padding-left: 1rem;
+	padding-right: 1rem;
+	background-image: url(../img/bgim1.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+ main {
+ 	display: flex;
+	flex-direction: column;
+	justify-content: top;
+	align-items: center;
+	width: 62%;
+	border-radius: 0.9375rem;
+	/* background-color: green !important; */
+	
+}
+
+.related-news {
+	width: 38%;
+	padding-left: 1rem;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: top;
+	align-items: center;
+	/* background-color: green !important; */
+}
+
+.navigate {
+	position: relative;
+	top: 0px;
+	left: -23.8rem;
+	margin-top: 1rem;
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: center;
+	height: 4.4375rem;
+  
+
+  & span {
+  	padding-left: 1.75rem;
+  	font-size: 1.125rem;
+  	color: rgb(255, 255, 255);
+  	font-family: "Geomanist";
+  }
+}
+
+.carusel{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 51.875rem;
+  height: 4.4375rem;
+  border-radius: 0.9375rem;
+  background-color: rgb(36, 35, 51);
+  font-size: 0.875rem;
+  font-family: "Geomanist";
+  color: rgb(157, 154, 204);
+
+
+  &__left{
+  	display: flex;
+		flex-direction: row;
+		align-items: center;
+  	padding-left: 1.75rem;
+ 
+  }
+
+  &__left span {
+  	padding-left: 1.75rem;
+  }
+
+  &__right{
+  	display: flex;
+		flex-direction: row;
+		align-items: center;
+  	padding-right: 1.75rem;
+  }
+
+  &__right span{
+  	padding-right: 1.375rem;
+  }
+  	
+}
+
+
+
+.main-news{
+	margin-top: 1.5rem;
+	padding: 1.25rem;
+	width: 51.875rem;
+  height: 48.1875rem;
+  border-radius: 0.9375rem;
+  background-color: rgb(36, 35, 51);
+  box-shadow: 0px 22px 40px 0px rgba(36, 35, 51, 0.45);
+
+	&__image {
+		border-radius: 15px;
+	  background-color: rgb(157, 154, 204);
+	  width: 49rem;
+	  height: 19.25rem;
+	  background-image: url(../img/main-img.png);
+	  background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
+	&__top{
+		margin-top: 1.5rem;
+		font-size: 1.375rem;
+	  font-family: "Geomanist";
+	  color: rgb(255, 255, 255);
+	  line-height: 1.2;
+	  text-align: left;
+	  width: 98%;
+	  height: 1rem;
+	}
+
+	&__date{
+		margin-top: 1.5rem;
+		font-family: "Geomanist";
+	  color: rgba(157, 154, 204, 0.502);
+	  line-height: 1.2;
+	  width: 5.875rem;
+	  height: 1rem;
+	  
+	}
+
+	&__description{
+		margin-top: 1.5rem;
+		font-family: "Geomanist";
+	  color: rgb(157, 154, 204);
+	  line-height: 1.563;
+	  width: 48.6875rem;
+	}
+
+	
+
+}
+
+
+.media{
+		border-top: 2px solid;
+		border-color: rgba(157, 154, 204, 0.102);
+		margin-top: 3.4375rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		height: 5.375rem;
+		width: 100%;
+		  		
+		
+
+		&__left{
+			padding-left: 1.75rem;
+			display: flex;
+			direction: row;
+			justify-content: flex-start;
+			align-items: center;
+
+		}
+	
+		&__right{
+			display: flex;
+			direction: row;
+			justify-content: flex-start;
+			align-items: center;
+		}
+
+		&__right img{
+			margin-left: 1.5rem;
+		}
+	}
+
+	.like{
+		display: flex;
+		direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		
+		& span {
+			padding-left: 1rem;
+			color: rgb(255, 255, 255);
+  		line-height: 1.563;
+		}	
+
+	}
+
+	.eye{
+		margin-left: 3rem;
+		display: flex;
+		direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		& span {
+			margin-left: 1rem;
+			color: rgb(157, 154, 204);
+  		line-height: 1.563;
+		}	
+	}
+
+.coments{
+	display: flex;
+	flex-direction: column;
+	justify-content: top;
+	align-items: center;
+	padding: 1rem;
+	margin-top: 1.5rem;
+	border-radius: 0.9375rem;
+  background-color: rgb(36, 35, 51);
+  box-shadow: 0px 22px 40px 0px rgba(36, 35, 51, 0.45);
+  width: 51.875rem;
+  
+
+ }
+
+ .comnets-input{
+ 	  display: flex;
+		direction: row;
+		justify-content: flex-start;
+		align-items: center;
+  	margin-top: 2rem;
+  	border-radius: 0.3rem;
+	  background-color: rgb(157, 154, 204);
+	  opacity: 0.051;
+	  color: rgba(157, 154, 204, 0.4);
+  	line-height: 1.2;
+	  width: 48.75rem;
+	  height: 3.875rem;
+	  margin-bottom: 1rem;
+  
+	& input {
+		background-color: rgb(157, 154, 204);
+	  opacity: 0.051;
+	  color: rgba(157, 154, 204, 0.4);
+  	line-height: 1.2;
+	}
+
+  & button {
+  	background-image: url('../img/arrow-right-bold.png');
+  	background-repeat: no-repeat;
+  	width: 3.875rem;
+		height: 3.875rem;
+
+  }
+
+ }
+
+.coments-header{
+	border-bottom: 2px solid;
+	border-color: rgba(157, 154, 204, 0.102);
+	width: 100%;
+	height: 4.875rem;
+	display: flex;
+	direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	&__left{
+			padding-left: 1.75rem;
+			display: flex;
+			direction: row;
+			justify-content: flex-start;
+			align-items: center;
+
+		}
+	
+		&__right{
+			margin-right: 2rem;
+			display: flex;
+			direction: row;
+			justify-content: center;
+			align-items: center;
+	
+	}
+
+		&__right a{
+			display: flex;
+			direction: row;
+			justify-content: center;
+			align-items: center;
+			font-family: "Myriad Pro";
+ 		  color: rgb(255, 255, 255);
+      line-height: 1.2;
+      width: 4.625rem;
+		}
+	
+
+}
+
+.coment-icon{
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: center;
+
+	& span{
+		margin-left: 1rem;
+		font-size: 1.125rem;
+  	font-family: "Myriad Pro";
+  	color: rgb(157, 154, 204);
+  	line-height: 1.2;
+	}
+}
+
+.coment{
+	box-sizing: boder-box;
+	margin-bottom: 0.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: top;
+	width: 100%;	
+	height: 8.5rem;
+	border-bottom: 2px solid;
+	border-color: rgba(157, 154, 204, 0.102);
+	
+&__left{
+	margin-right: 0.75rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: top;
+	align-items: center;
+	width: 14%;
+}
+
+	&__avatar{
+		margin-top: 1rem;
+		border-radius: 50%;
+	  background-color: rgb(157, 154, 204);
+	  width: 3.5rem;
+	  height: 3.5rem;
+	  background:transparent url('../img/coment-avatar.png') center center no-repeat;
+	}
+
+	
+
+}
+
+.coment-text{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: top;
+	align-items: left;
+	width: 86%;
+
+	&__label {
+		margin-top: 1rem;
+		font-size: 1.125rem;
+	  font-family: "Geomanist";
+	  color: rgb(157, 154, 204);
+	  line-height: 1.2;
+	  font-weight:bold;
+	  letter-spacing: 1px;
+	 }
+
+	 &__date{
+	 	padding-left: 0.75rem;
+		font-family: "Geomanist";
+	  color: rgba(157, 154, 204, 0.502);
+	  line-height: 1.2;
+	 }
+
+	 &__text{
+	 	margin-top: 0.75rem;
+	 	color: rgb(255, 255, 255);
+  	line-height: 1.714;
+  	font-weight:bold;
+  	
+  }
+
+}
+
+.navigate--right {
+	position: relative;
+	top: 0px;
+	left: -10.5rem;
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: center;
+	height: 4.4375rem;
+  
+  & span {
+  	padding-left: 0rem;
+  	font-size: 1.125rem;
+  	color: rgb(255, 255, 255);
+  	font-family: "Geomanist";
+  }
+}
+
+.news{
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: bottom;
+	align-items: center;
+	width: 27.625rem;
+	height: 16.375rem;
+	margin-bottom: 2.5rem;
+	background-image: url('../img/realted-news.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: rgb(36, 35, 51);
+	border-radius: 0.625rem;
+
+	
+	&__text{
+		background-color: rgba(36, 35, 51, 0.902);
+	  box-shadow: 0px 22px 40px 0px rgba(36, 35, 51, 0.45);
+	  width: 100%;
+	  height: 7rem;
+	  border-radius: 0 0 0.625rem 0.625rem;
+	  padding: 1.25rem;
+	 }
+
+	 &__label{
+	 	font-size: 1.25rem;
+	  font-family: "Geomanist";
+	  color: rgb(255, 255, 255);
+	  line-height: 1.2;
+	 }
+
+	 &__description{
+	 	margin-top: 1rem;
+	 	font-size: 0.875rem;
+	 	font-family: "Geomanist";
+  	color: rgb(157, 154, 204);
+  	line-height: 1.2;
+  	text-align: left;
+  	font-weight: bold;
+	 }
+
+}
+
+
