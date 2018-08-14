@@ -8,7 +8,7 @@
     @else if $media == tablet {
         @media (min-width: $tablet) { @content; }
     }
-    @else if $media == notepad {
+    @else if $media == nodepad {
         @media (min-width: $nodepad) { @content; }
     }
 
